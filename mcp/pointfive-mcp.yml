@@ -1,0 +1,53 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://www.pointfive.co/mcp
+server:
+  name: pointfive
+  description: >-
+    The PointFive MCP Server brings cloud cost optimization intelligence directly
+    into AI development environments (Claude, Cursor, ChatGPT) via the Model
+    Context Protocol. Users only access data they can already see in PointFive;
+    the server uses the same permissions model as the platform with no elevated
+    privileges.
+  transport: sse
+  url: https://mcp.pointfive.co/sse
+  authentication:
+    type: oauth2
+    profile: OAuth 2.1
+    authorization_endpoint: https://mcp.pointfive.co/authorize
+    token_endpoint: https://mcp.pointfive.co/token
+    registration_endpoint: https://mcp.pointfive.co/register
+    pkce: S256
+    scopes:
+    - api:read
+    - api:write
+  install:
+    client_config: |
+      {
+        "mcpServers": {
+          "pointfive": {
+            "command": "npx",
+            "args": [
+              "-y",
+              "mcp-remote",
+              "https://mcp.pointfive.co/sse"
+            ]
+          }
+        }
+      }
+# Tool categories advertised on the /mcp page. Individual tool names are not
+# published; captured here as the documented capability surface (not fabricated
+# operationIds).
+tools:
+- name: opportunities
+  description: Discover and filter optimization opportunities across cloud services.
+- name: resources
+  description: Query resources and analyze linked optimization opportunities.
+- name: anomalies
+  description: List active anomalies and identify cost contributors.
+- name: commitments
+  description: Access reservation and savings plan recommendations.
+- name: billing_data
+  description: Access CUR and FOCUS billing data (documented as "coming soon").
+  status: coming-soon

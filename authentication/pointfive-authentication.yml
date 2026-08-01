@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://mcp.pointfive.co/.well-known/oauth-authorization-server
+docs: https://www.pointfive.co/mcp
+summary:
+  types: [oauth2]
+  oauth2_flows: [authorizationCode]
+  notes: >-
+    PointFive's public programmatic surface is its MCP server, which authenticates
+    with OAuth 2.1 (authorization code + PKCE S256, refresh tokens, dynamic client
+    registration). Users only access data they can already see in the PointFive
+    platform. The core web application (app.pointfive.co) is a separate
+    session/SSO-based login; no first-party REST API is publicly documented.
+schemes:
+- name: OAuth2
+  type: oauth2
+  profile: OAuth 2.1
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://mcp.pointfive.co/authorize
+    tokenUrl: https://mcp.pointfive.co/token
+    registrationUrl: https://mcp.pointfive.co/register
+    revocationUrl: https://mcp.pointfive.co/revoke
+    pkce: S256
+    grant_types: [authorization_code, refresh_token]
+    token_endpoint_auth_methods: [none]
+    scopes:
+      api:read: Read access to PointFive data (opportunities, resources, anomalies, commitments).
+      api:write: Write access to PointFive data.
+  bearer_methods: [header]
+  sources: [well-known/pointfive-oauth-authorization-server.json]

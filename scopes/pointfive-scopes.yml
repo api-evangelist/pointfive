@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: https://mcp.pointfive.co/.well-known/oauth-authorization-server
+docs: https://www.pointfive.co/mcp
+schemes:
+- name: OAuth2
+  source: well-known/pointfive-oauth-authorization-server.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://mcp.pointfive.co/authorize
+    tokenUrl: https://mcp.pointfive.co/token
+scopes:
+- scope: api:read
+  description: Read access to PointFive data (opportunities, resources, anomalies, commitments).
+  flows: [authorizationCode]
+  sources: [well-known/pointfive-oauth-authorization-server.json]
+- scope: api:write
+  description: Write access to PointFive data.
+  flows: [authorizationCode]
+  sources: [well-known/pointfive-oauth-authorization-server.json]

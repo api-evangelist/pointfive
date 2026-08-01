@@ -1,8 +1,16 @@
 aid: pointfive
 name: Pointfive
-description: 'Pointfive is a company surfaced as a portfolio company of accel, index-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: cloud-saas. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  PointFive is the AI Efficiency Operating System for FinOps, platform, and
+  engineering teams. It detects 500+ types of cloud, Kubernetes, and AI-infrastructure
+  waste that traditional cost dashboards miss, then converts findings into auditable
+  remediation — drafting pull requests and Jira tickets — and tracks realized savings
+  back to actual budget impact. Marquee capabilities include DeepWaste Detection,
+  DeepWaste for AI (model/GPU/data-platform spend), TokenShift (coding-agent token
+  governance), and Agentic Remediation. Its public programmatic surface is an OAuth
+  2.1 Model Context Protocol (MCP) server that brings cost intelligence into AI tools
+  like Claude, Cursor, and ChatGPT. Surfaced as an Accel / Index Ventures portfolio
+  company and enriched by the API Evangelist pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/pointfive/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +19,31 @@ x-backed-by:
 - index-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://www.pointfive.co/og-image.png
 tags:
 - Company
 - Cloud Saas
+- FinOps
+- Cloud Cost Optimization
+- Cloud Infrastructure
+- Kubernetes
+- AI Infrastructure
+- MCP
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +53,42 @@ maintainers:
 common:
 - type: Website
   url: https://www.pointfive.co/
+- type: Documentation
+  url: https://www.pointfive.co/mcp
+- type: MCPServer
+  url: mcp/pointfive-mcp.yml
+- type: WellKnown
+  url: well-known/pointfive-well-known.yml
+- type: Authentication
+  url: authentication/pointfive-authentication.yml
+- type: OAuthScopes
+  url: scopes/pointfive-scopes.yml
+- type: Lifecycle
+  url: lifecycle/pointfive-lifecycle.yml
+- type: StatusPage
+  url: https://status.pointfive.co/
+- type: Conformance
+  url: conformance/pointfive-conformance.yml
+- type: Compliance
+  url: https://trust.pointfive.co/
+- type: TrustCenter
+  url: security/pointfive-trust-center.yml
+- type: DomainSecurity
+  url: security/pointfive-domain-security.yml
+- type: LLMsTxt
+  url: llms/pointfive-llms.txt
+- type: Blog
+  url: https://www.pointfive.co/blog
+- type: Support
+  url: https://www.pointfive.co/contact
+- type: Login
+  url: https://app.pointfive.co/
+- type: TermsOfService
+  url: https://www.pointfive.co/terms
+- type: PrivacyPolicy
+  url: https://www.pointfive.co/privacy
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

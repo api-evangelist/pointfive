@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+host: https://mcp.pointfive.co
+documents:
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: pointfive-oauth-authorization-server.json
+- path: /.well-known/oauth-protected-resource
+  status: 200
+  file: pointfive-oauth-protected-resource.json
+- path: /.well-known/openid-configuration
+  status: 404
+probed_absent:
+- host: https://www.pointfive.co
+  paths:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}

@@ -1,0 +1,1 @@
+{"resource":"https://mcp.pointfive.co","authorization_servers":["https://mcp.pointfive.co"],"bearer_methods_supported":["header"],"scopes_supported":["api:read","api:write"],"resource_name":"PointFive MCP Server"}

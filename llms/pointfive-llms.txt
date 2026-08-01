@@ -1,0 +1,31 @@
+# PointFive
+
+> PointFive is the AI Efficiency Operating System for FinOps, platform, and engineering teams. It detects 500+ types of cloud, Kubernetes, and AI-infrastructure waste that traditional dashboards miss, then converts findings into auditable remediation (pull requests, Jira tickets) and tracks realized savings back to budget impact.
+
+PointFive's public programmatic surface is a Model Context Protocol (MCP) server that brings its cost-optimization intelligence into AI development environments (Claude, Cursor, ChatGPT). Authentication is OAuth 2.1; users only access data they can already see in the PointFive platform.
+
+## MCP
+- [PointFive MCP Server](https://www.pointfive.co/mcp): SSE endpoint `https://mcp.pointfive.co/sse`, OAuth 2.1 (scopes `api:read`, `api:write`). Tools: Opportunities, Resources, Anomalies, Commitments, Billing Data (CUR/FOCUS, coming soon).
+- [OAuth authorization-server metadata](https://mcp.pointfive.co/.well-known/oauth-authorization-server)
+- [OAuth protected-resource metadata](https://mcp.pointfive.co/.well-known/oauth-protected-resource)
+
+## Product
+- [DeepWaste Detection](https://www.pointfive.co/): Architecture-aware waste identification across cloud, Kubernetes, and AI platforms.
+- [DeepWaste for AI](https://www.pointfive.co/): Controls model, GPU, and data-platform spend.
+- [TokenShift](https://www.pointfive.co/): Governs coding-agent token usage from IDE to cloud.
+- [Agentic Remediation](https://www.pointfive.co/): Converts detections into auditable fixes.
+
+## Docs & Links
+- [Homepage](https://www.pointfive.co/)
+- [Application / Login](https://app.pointfive.co/)
+- [Blog](https://www.pointfive.co/blog)
+- [Research](https://www.pointfive.co/research)
+- [Contact / Sales](https://www.pointfive.co/contact)
+- [Status page](https://status.pointfive.co/) (incident.io)
+- [Trust center](https://trust.pointfive.co/) (SOC 2 Type II, ISO 27001/27017/27018)
+- [Terms of Service](https://www.pointfive.co/terms)
+- [Privacy Policy](https://www.pointfive.co/privacy)
+
+## Notes
+- Sector: FinOps / cloud cost optimization (AWS, Azure, GCP, Kubernetes, Snowflake, Databricks).
+- No public REST OpenAPI is published; the MCP server is the documented machine surface.

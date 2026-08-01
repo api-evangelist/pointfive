@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: https://status.pointfive.co/
+status_page: https://status.pointfive.co/
+status_page_provider: incident.io
+status_components:
+- Platform
+- Automations
+- Data Explorer
+- Analytics
+- Anomalies
+versioning:
+  scheme: unknown
+  notes: >-
+    No public versioning or deprecation policy is documented. PointFive's only
+    public programmatic surface is the MCP server; the Billing Data (CUR/FOCUS)
+    tool set is documented as "coming soon".
+deprecation:
+  policy_url: null
+  sunset_header: null
