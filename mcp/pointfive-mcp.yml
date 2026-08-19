@@ -4,11 +4,9 @@ status: published
 source: https://www.pointfive.co/mcp
 server:
   name: pointfive
-  description: >-
-    The PointFive MCP Server brings cloud cost optimization intelligence directly
-    into AI development environments (Claude, Cursor, ChatGPT) via the Model
-    Context Protocol. Users only access data they can already see in PointFive;
-    the server uses the same permissions model as the platform with no elevated
+  description: The PointFive MCP Server brings cloud cost optimization intelligence directly into AI development
+    environments (Claude, Cursor, ChatGPT) via the Model Context Protocol. Users only access data they
+    can already see in PointFive; the server uses the same permissions model as the platform with no elevated
     privileges.
   transport: sse
   url: https://mcp.pointfive.co/sse
@@ -23,22 +21,9 @@ server:
     - api:read
     - api:write
   install:
-    client_config: |
-      {
-        "mcpServers": {
-          "pointfive": {
-            "command": "npx",
-            "args": [
-              "-y",
-              "mcp-remote",
-              "https://mcp.pointfive.co/sse"
-            ]
-          }
-        }
-      }
-# Tool categories advertised on the /mcp page. Individual tool names are not
-# published; captured here as the documented capability surface (not fabricated
-# operationIds).
+    client_config: "{\n  \"mcpServers\": {\n    \"pointfive\": {\n      \"command\": \"npx\",\n      \"\
+      args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://mcp.pointfive.co/sse\"\n\
+      \      ]\n    }\n  }\n}\n"
 tools:
 - name: opportunities
   description: Discover and filter optimization opportunities across cloud services.
@@ -51,3 +36,12 @@ tools:
 - name: billing_data
   description: Access CUR and FOCUS billing data (documented as "coming soon").
   status: coming-soon
+deployment:
+  mode: none
+  endpoint: https://mcp.pointfive.co/sse
+  verified: probed
+  probe: dead
+  note: the endpoint this manifest claimed did not answer; recorded as none rather than deleted so the
+    claim stays auditable
+  checked: '2026-08-12'
+  source: catalog MCP census
