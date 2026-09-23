@@ -1,0 +1,36 @@
+# Front Door AI Index — pointfive — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: pointfive
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.pointfive.co
+  final_host: www.pointfive.co
+  ownership: own
+  owner: pointfive
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 44
+  host_score: 44
+  density: 38.1
+  words: 1155
+  tiers:
+    agentic: 8
+    core: 22
+    model: 14
+  ambiguous: 10
+  top_terms:
+    AI: 22
+    agent: 8
+    Bedrock: 5
+    OpenAI: 4
+    Claude: 2
+    MCP: 2
+    agentic: 2
+    inference: 2
+    intelligence: 2
+    prompts: 2
+    Azure OpenAI: 1
+    GPT: 1
