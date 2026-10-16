@@ -1,0 +1,21 @@
+{
+  "repo": "pointfive",
+  "feeds": [
+    {
+      "source": "https://www.pointfive.co/blog",
+      "feed_url": "https://www.pointfive.co/blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.pointfive.co/rss.xml",
+      "feed_url": "https://www.pointfive.co/rss.xml",
+      "title": "",
+      "saved": 12,
+      "method": "feed"
+    }
+  ],
+  "post_count": 12,
+  "fetched": "2026-10-10T13:15:00Z"
+}
