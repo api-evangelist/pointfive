@@ -64,6 +64,100 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Pointfive is a company surfaced as a portfolio company of accel, index-ventures and added to the API Evangelist network as a stub for enrichment. Sector: cloud-saas. This profile is a lead awaiting the enrichment pipeline.
+PointFive is the AI Efficiency Operating System for FinOps, platform, and engineering teams. It detects 500+ types of cloud, Kubernetes, and AI-infrastructure waste that traditional cost dashboards miss, then converts findings into auditable remediation — drafting pull requests and Jira tickets — and tracks realized savings back to actual budget impact. Marquee capabilities include DeepWaste Detection, DeepWaste for AI (model/GPU/data-platform spend), TokenShift (coding-agent token governance), and Agentic Remediation. Its public programmatic surface is an OAuth 2.1 Model Context Protocol (MCP) server that brings cost intelligence into AI tools like Claude, Cursor, and ChatGPT. Surfaced as an Accel / Index Ventures portfolio company and enriched by the API Evangelist pipeline.
 
-Backed by: accel, index-ventures — https://www.pointfive.co/
+**Areas:** Company · Cloud Saas · FinOps · Cloud Cost Optimization · Cloud Infrastructure · Kubernetes · AI Infrastructure · MCP
+
+## Pointfive on APIs.io
+
+Everything profiled for Pointfive is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pointfive/](https://apis.io/providers/pointfive/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [pointfive](https://apis.io/servers/pointfive/pointfive/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Pointfive Authentication](https://apis.io/security/pointfive/pointfive-authentication/)
+- [Pointfive Domain Security](https://apis.io/security/pointfive/pointfive-domain-security/)
+- [Pointfive Trust Center](https://apis.io/security/pointfive/pointfive-trust-center/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Pointfive Scopes](https://apis.io/scopes/pointfive/pointfive-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.pointfive.co/)
+- [Documentation](https://www.pointfive.co/mcp)
+- [Support](https://www.pointfive.co/contact)
+- [Blog](https://www.pointfive.co/blog)
+- [Compliance](https://trust.pointfive.co/)
+- [Terms of service](https://www.pointfive.co/terms)
+- [Privacy policy](https://www.pointfive.co/privacy)
+- [Status](https://status.pointfive.co/)
+
+## API Evangelist rating
+
+**Kin Score 25.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 35.5 |
+
+**Agent readiness 18.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 34.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pointfive/](https://apis.io/providers/pointfive/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Pointfive: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pointfive/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
